@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MERAK Café — Pop-Up</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <meta name="description" content="MERAK Café — cafetería pop-up en forma de taza. Café de calidad, ambiente acogedor y productos para disfrutar.">
+  <style>
+    .hero-img {
+      width: 100%;
+      height: 90vh;
+      object-fit: cover;
+      display: block;
+    }
+  </style>
+</head>
+
+<body class="antialiased text-gray-800 bg-gray-50">
+  <!-- NAV -->
+  <header class="bg-white shadow-md fixed w-full z-40">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <div class="flex items-center gap-3">
+          <!-- Logo -->
+          <img src="file:///C:/Users/47469409/Desktop/merakproyecto/logo.png" alt="MERAK Café Logo" class="h-10 w-10 rounded-md object-cover">
+          <div>
+            <a href="#" class="text-xl font-semibold">MERAK Café</a>
+            <p class="text-xs text-gray-500 -mt-1">El café llega a donde estés</p>
+          </div>
+        </div>
+        <nav class="hidden md:flex gap-6 items-center text-sm">
+          <a href="#productos" class="hover:text-amber-600">Productos</a>
+          <a href="#mision" class="hover:text-amber-600">Misión & Visión</a>
+          <a href="#trabaja" class="hover:text-amber-600">Trabajá con nosotros</a>
+          <a href="#contacto" class="hover:text-amber-600">Contacto</a>
+          <a href="#localizacion" class="hover:text-amber-600">Localización</a>
+        </nav>
+        <div class="hidden md:flex items-center gap-3">
+          <a href="#pedido" class="px-4 py-2 bg-amber-600 text-white rounded-lg shadow">Pedir online</a>
+        </div>
+        <button class="md:hidden p-2 rounded-lg" id="btnMenu">☰</button>
+      </div>
+    </div>
+
+    <!-- Menú móvil -->
+    <div id="mobileMenu" class="md:hidden hidden bg-white border-t">
+      <div class="px-4 py-3 flex flex-col gap-2">
+        <a href="#productos">Productos</a>
+        <a href="#mision">Misión & Visión</a>
+        <a href="#trabaja">Trabajá con nosotros</a>
+        <a href="#contacto">Contacto</a>
+        <a href="#localizacion">Localización</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main class="pt-16">
+    <section id="inicio" class="w-full">
+      <img src="file:///C:/Users/47469409/Desktop/merakproyecto/maqueta.png" alt="Maqueta MERAK Café" class="hero-img">
+    </section>
+
+    <!-- Productos -->
+    <section id="productos" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <h2 class="text-2xl font-bold mb-4">Productos que ofrecemos</h2>
+      <p class="text-gray-600 mb-8">Cafés especiales, bebidas frías, pastelería artesanal y combos para llevar.</p>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <article class="bg-white rounded-2xl shadow p-4">
+          <img src="C:\Users\47469409\Desktop\merakproyecto\espresso.png" alt="Espresso MERAK" class="rounded-lg h-40 w-full object-cover">
+          <h3 class="mt-3 font-semibold">Espresso Merak</h3>
+          <p class="text-sm text-gray-600 mt-1">Nuestro espresso emblemático, preparado con granos seleccionados.</p>
+        </article>
+
+        <article class="bg-white rounded-2xl shadow p-4">
+          <img src="C:\Users\47469409\Desktop\merakproyecto\latte.png" alt="Latte MERAK" class="rounded-lg h-40 w-full object-cover">
+          <h3 class="mt-3 font-semibold">Latte de la casa</h3>
+          <p class="text-sm text-gray-600 mt-1">Espuma sedosa y siropes artesanales.</p>
+        </article>
+
+        <article class="bg-white rounded-2xl shadow p-4">
+          <img src="C:\Users\47469409\Desktop\merakproyecto\pasteleria.png" alt="Pastelería MERAK" class="rounded-lg h-40 w-full object-cover">
+          <h3 class="mt-3 font-semibold">Pastelería artesanal</h3>
+          <p class="text-sm text-gray-600 mt-1">Facturas, muffins y tortas caseras.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Misión & Visión -->
+    <section id="mision" class="bg-white py-12">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div>
+          <h2 class="text-2xl font-bold">Misión</h2>
+          <p class="mt-3 text-gray-700">Ofrecer café excepcional e innovador, creando un espacio acogedor que fomente la conexión entre personas.</p>
+          <h2 class="text-2xl font-bold mt-6">Visión</h2>
+          <p class="mt-3 text-gray-700">Ser la cadena líder de cafeterías pop-up en Uruguay, reconocida por originalidad, calidad y sostenibilidad.</p>
+        </div>
+        <div>
+          <img src="C:\Users\47469409\Desktop\merakproyecto\cafeteria.png" alt="Interior MERAK" class="rounded-2xl shadow h-64 w-full object-cover">
+        </div>
+      </div>
+    </section>
+
+    <!-- Trabaja con nosotros -->
+    <section id="trabaja" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="bg-amber-50 rounded-2xl p-8 shadow">
+        <h2 class="text-2xl font-bold">Trabajá con nosotros</h2>
+        <p class="mt-2 text-gray-600">Buscamos personas apasionadas por el café y la atención al cliente.</p>
+
+        <form id="trabajaForm" class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4" onsubmit="submitTrabaja(event)">
+          <input required name="nombre" placeholder="Nombre completo" class="p-3 rounded border" />
+          <input required name="email" type="email" placeholder="Email" class="p-3 rounded border" />
+          <select name="puesto" class="p-3 rounded border">
+            <option>Barista</option>
+            <option>Atención al público</option>
+            <option>Cocina / Pastelería</option>
+          </select>
+          <textarea name="mensaje" placeholder="Contanos por qué te gustaría trabajar con nosotros" class="p-3 rounded border sm:col-span-2"></textarea>
+          <button type="submit" class="px-4 py-2 bg-amber-600 text-white rounded">Enviar</button>
+        </form>
+        <p id="trabajaMsg" class="mt-4 text-sm text-green-600 hidden">Solicitud enviada. Gracias por tu interés.</p>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="bg-white py-12">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-2xl font-bold">Contacto</h2>
+        <p class="mt-2 text-gray-600">Tel: <a href="tel:+59890000000" class="text-amber-600">+598 90 000 000</a> · Email: <a href="mailto:info@merakcafe.com" class="text-amber-600">info@merakcafe.com</a></p>
+        <p class="mt-2 text-gray-600">Horario: Lun-Dom 08:00 - 22:00</p>
+      </div>
+    </section>
+
+    <!-- Localización -->
+    <section id="localizacion" class="py-8">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-2xl font-bold">Localización</h2>
+        <iframe class="w-full h-64 rounded mt-4" loading="lazy" src="https://www.google.com/maps?q=Montevideo%2C%20Uruguay&output=embed"></iframe>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 text-white py-8">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center text-center">
+        <img src="file:///C:/Users/47469409/Desktop/merakproyecto/logo.png" alt="MERAK Café Logo" class="h-12 mb-3">
+        <p class="text-gray-300 text-sm">MERAK Café — El café llega a donde estés.</p>
+        <p class="text-xs text-gray-500 mt-3">© 2025 MERAK Café. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    const btnMenu = document.getElementById('btnMenu');
+    const mobileMenu = document.getElementById('mobileMenu');
+    btnMenu.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+
+    function submitTrabaja(e) {
+      e.preventDefault();
+      document.getElementById('trabajaMsg').classList.remove('hidden');
+      setTimeout(() => document.getElementById('trabajaMsg').classList.add('hidden'), 5000);
+      e.target.reset();
+    }
+  </script>
+</body>
+</html>
